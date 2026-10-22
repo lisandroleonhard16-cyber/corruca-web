@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CORRUCA SA | Cajas de cartón corrugado</title>
+  <meta name="description" content="Fábrica de cajas de cartón corrugado simple, doble, triple y troqueladas. Pedidos desde 500 unidades, a medida.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/webp" href="img/favicon.webp">
+</head>
+<body>
+
+  <header>
+    <div class="wrap">
+      <a href="#inicio"><img src="img/logo.webp" alt="CORRUCA"></a>
+      <nav>
+        <a href="#productos">Productos</a>
+        <a href="#ejemplos">Ejemplos</a>
+        <a href="#pedido">Pedido</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+
+    <div class="wrap hero">
+      <h1>Cajas de cartón corrugado a tu medida.</h1>
+      <p>Fabricamos cajas simples, dobles, triples y troqueladas, lisas o con tu marca impresa. Pedidos desde 500 unidades.</p>
+      <a class="btn" href="#pedido">Hacer un pedido</a>
+    </div>
+
+    <section id="productos" class="kraft">
+      <div class="wrap">
+        <h2>Tipos de cajas</h2>
+        <p class="sub">Deslizá para ver cada tipo de cartón.</p>
+        <div class="car" data-car>
+          <div class="track" tabindex="0" aria-label="Tipos de cajas">
+            <article class="slide">
+              <img src="img/cacique.webp" alt="Caja de corrugado simple con logo de El Cacique" loading="lazy">
+              <div>
+                <h3>Corrugado simple</h3>
+                <p>Una sola onda. Liviano y económico para productos de bajo peso y envíos cotidianos.</p>
+              </div>
+            </article>
+            <article class="slide">
+              <img src="img/pallet1.webp" style="object-position:50% 25%" alt="Pila de cajas de corrugado doble Don Quique" loading="lazy">
+              <div>
+                <h3>Corrugado doble</h3>
+                <p>Dos ondas. Más resistencia al apilado y a los golpes para productos medianos y pesados.</p>
+              </div>
+            </article>
+            <article class="slide">
+              <img src="img/pallet2.webp" style="object-position:50% 20%" alt="Planchas de corrugado triple en pallet" loading="lazy">              <div>
+                <h3>Corrugado triple</h3>
+                <p>Tres ondas. Máxima resistencia para cargas pesadas, exportación y almacenaje prolongado.</p>
+              </div>
+            </article>
+            <article class="slide">
+              <img  class="fit" src="img/festivas.webp" alt="Caja troquelada impresa" loading="lazy">
+              <div>
+                <h3>Cajas troqueladas</h3>
+                <p>Formas y aperturas especiales, con manijas, tapas y cierres sin cinta, listas para armar.</p>
+              </div>
+            </article>
+          </div>
+          <div class="arrows">
+            <button data-d="-1" aria-label="Anterior">‹</button>
+            <button data-d="1" aria-label="Siguiente">›</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ejemplos">
+      <div class="wrap">
+        <h2>Así quedaría tu caja</h2>
+        <p class="sub">Ejemplos de impresión con logo, datos de contacto y símbolos de manipulación.</p>
+        <div class="car" data-car>
+          <div class="track" tabindex="0" aria-label="Ejemplos de cajas impresas">
+            <article class="slide">
+              <img src="img/marcelo.webp" alt="Caja con logo impreso de una empresa de fletes" loading="lazy">
+              <div><h3>Logo a un color</h3></div>
+            </article>
+            <article class="slide">
+              <img src="img/cacique.webp" alt="Caja con logo y datos de contacto" loading="lazy">
+              <div><h3>Logo y datos de contacto</h3></div>
+            </article>
+            <article class="slide">
+              <img src="img/antojitos.webp" alt="Caja con cenefas y leyendas frágil" loading="lazy">
+              <div><h3>Leyendas y flechas de posición</h3></div>
+            </article>
+            <article class="slide">
+              <img src="img/sigma.webp" alt="Caja con símbolos de manipulación" loading="lazy">
+              <div><h3>Símbolos de manipulación</h3></div>
+            </article>
+            <article class="slide">
+              <img  class="fit"src="img/festivas.webp" alt="Caja troquelada con diseño a dos colores" loading="lazy">
+              <div><h3>Diseño a dos colores</h3></div>
+            </article>
+          </div>
+          <div class="arrows">
+            <button data-d="-1" aria-label="Anterior">‹</button>
+            <button data-d="1" aria-label="Siguiente">›</button>
+          </div>
+        </div>
+
+        
+      </div>
+    </section>
+
+    <section id="pedido" class="kraft">
+      <div class="wrap">
+        <h2>Hacé tu pedido</h2>
+        <p class="sub">Mínimo 500 cajas. Medidas internas en milímetros. Al enviar, se abre WhatsApp con tu pedido listo.</p>
+        <form id="f" novalidate>
+          <label>Nombre y apellido
+            <input name="nombre" required placeholder=" " autocomplete="name">
+          </label>
+          <label>Empresa
+            <input name="empresa" placeholder=" " autocomplete="organization">
+          </label>
+          <label>Teléfono
+            <input name="tel" type="tel" required placeholder=" " autocomplete="tel">
+          </label>
+          <label>Email
+            <input name="mail" type="email" required placeholder=" " autocomplete="email">
+          </label>
+          <label>Tipo de cartón
+            <select name="tipo">
+              <option>Corrugado simple</option>
+              <option>Corrugado doble</option>
+              <option>Corrugado triple</option>
+              <option>Caja troquelada</option>
+            </select>
+          </label>
+          <label>Impresión
+            <select name="imp">
+              <option>Sin impresión</option>
+              <option>1 color</option>
+              <option>2 colores o más</option>
+            </select>
+          </label>
+          <fieldset>
+            <legend>Medidas (mm)</legend>
+            <label>Largo
+              <input name="l" type="number" min="200" step="1" required placeholder=" " inputmode="numeric">
+            </label>
+            <label>Ancho
+              <input name="a" type="number" min="200" step="1" required placeholder=" " inputmode="numeric">
+            </label>
+            <label>Alto
+              <input name="h" type="number" min="100" step="1" required placeholder=" " inputmode="numeric">
+            </label>
+          </fieldset>
+          <p class="hint full" style="color:#ffffff">Medida mínima: 200 × 200 × 100 mm o 300 × 200 × 100 mm.</p>
+          <label>Cantidad (mínimo 500 unidades)
+            <input name="q" type="number" min="500" step="1" required placeholder=" " inputmode="numeric">
+          </label>
+          <label class="full">Comentarios
+            <textarea name="c" rows="3"></textarea>
+          </label>
+          <p id="err" class="full" role="alert"></p>
+          <p class="hint full" style="color:#ffffff">Medios de pago: transferencia, efectivo, debito/credito. Coordinamos el pago por WhatsApp.</p>
+          <button class="btn full" type="submit">Enviar pedido por WhatsApp</button>
+        </form>
+      </div>
+    </section>
+    
+
+    <section id="contacto">
+      <div class="wrap">
+        <h2>Contacto</h2>
+        <p class="sub">Escribinos o visitá la fábrica.</p>
+        <div class="contact">
+          <a id="ig" target="_blank" rel="noopener"><b>Instagram</b><span id="igt"></span></a>
+          <a id="mail"><b>Email</b><span id="mailt"></span></a>
+          <a id="wa2" target="_blank" rel="noopener"><b>WhatsApp</b><span id="wat"></span></a>
+          <a id="map" target="_blank" rel="noopener"><b>Fábrica</b><span id="addr"></span></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <a id="fmail" class="fl" title="Escribinos por email">© <span id="y"></span> CORRUCA SA. Todos los derechos reservados.</a>
+  </footer>
+
+  <a class="wa" id="wa" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 32 32"><path d="M16 3a13 13 0 0 0-11 19.8L3 29l6.4-2A13 13 0 1 0 16 3zm0 23.6c-2 0-3.900-.6-5.500-1.600l-.4-.2-3.800 1.200 1.200-3.700-.3-.4A10.600 10.600 0 1 1 16 26.600zm5.800-7.900c-.3-.2-1.900-.9-2.200-1s-.5-.2-.7.200-.8 1-1 1.200-.4.200-.7.100a8.700 8.700 0 0 1-4.300-3.800c-.3-.6.300-.5.900-1.700.1-.2 0-.4 0-.5l-1-2.300c-.3-.6-.5-.5-.7-.5h-.6a1.200 1.200 0 0 0-.9.400 3.700 3.700 0 0 0-1.100 2.700c0 1.600 1.200 3.200 1.300 3.400s2.300 3.600 5.600 5c2 .9 2.800 1 3.800.8a3.200 3.200 0 0 0 2.100-1.500 2.600 2.600 0 0 0 .2-1.500c-.1-.1-.3-.2-.6-.4z"/></svg>
+  </a>
+  <p>probando github</p>
+  <script src="js/main.js"></script>
+</body>
+</html>
